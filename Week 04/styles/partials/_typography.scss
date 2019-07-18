@@ -1,0 +1,14 @@
+/* xTypography section - basic style */
+@import url(http://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap);
+
+$primary-font: 'Baloo Bhai', sans-serif;
+
+h1{
+  font-family: $primary-font;
+}
+
+body{
+  font-family: $primary-font;
+}
+//Add to style-guide.scss
+//@import 'partials/typography';
