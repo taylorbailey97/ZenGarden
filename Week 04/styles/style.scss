@@ -1,0 +1,99 @@
+@import "./partials/ticker";
+@import "./partials/viewer";
+@import "./partials/background";
+@import "./partials/links";
+@import "./partials/popup";
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+.preamble, .summary {
+  display: none;
+}
+
+body {
+  width: 80%;
+  margin: 15px auto;
+}
+
+footer {
+  position: fixed;
+  height: 5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  clear: both;
+  color: #fff;
+  background: #134347;
+  text-align: center;
+  a {
+    display: inline-block;
+    overflow: hidden;
+    width: 50px;
+    height: 40px;
+    padding: 50px 0 0 0;
+    margin: 0 0.5em;
+    position: relative;
+    color: transparent;
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  }
+}
+footer a:hover,
+footer a:focus {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+footer a:visited {
+  color: rgba(255, 255, 255, 0.2);
+}
+footer a::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  overflow: visible;
+  font-size: 36px;
+  text-indent: 0;
+
+}
+footer a.zen-validate-html::before {
+  content: "ΓΔ";
+}
+footer a.zen-validate-html:hover::before,
+footer a.zen-validate-html:focus::before {
+  content: "</>";
+}
+footer a.zen-validate-css::before {
+  content: "ΣΨ";
+}
+footer a.zen-validate-css:hover::before,
+footer a.zen-validate-css:focus::before {
+  content: "{3}";
+}
+footer a.zen-license::before {
+  content: "Ξͻ";
+}
+footer a.zen-license:hover::before,
+footer a.zen-license:focus::before {
+  content: "CC";
+}
+footer a.zen-accessibility::before {
+  content: "ϡϪ";
+}
+footer a.zen-accessibility:hover::before,
+footer a.zen-accessibility:focus::before {
+  content: "♿";
+}
+footer a.zen-github::before {
+  content: "Ωβ";
+}
+footer a.zen-github:hover::before,
+footer a.zen-github:focus::before {
+  content: "🐙";
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    margin-right: 250px; 
+  }
+}

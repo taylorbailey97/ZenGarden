@@ -1,0 +1,41 @@
+.wrapper {
+    height: 200px;
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    ul {
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .wrapper {
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 250px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: -1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        bottom: 0;
+        background-color: #1111110e;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 6rem;
+        padding-bottom: 5.5rem;
+        li a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            &hover {
+                color: #f1f1f1;
+                text-decoration: underline;
+            }
+        }
+        li:not(:last-child) {
+            &:after {
+                content: '---------------------------------'
+            }
+        }
+    }
+}

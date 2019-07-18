@@ -1,0 +1,42 @@
+$padding: 10px;
+
+div[role=main] {
+  background: rgba(115, 142, 127, 0.251);
+  background-image:
+    //linear-gradient(rgba(54, 67, 71, .5) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(115, 142, 127, .2) 2px, transparent 2px),
+    linear-gradient(rgba(54, 67, 71, 1) 2px, transparent 2px);
+    //linear-gradient(90deg, rgba(115, 142, 127, .3) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  border: #e6e6e63a 2px solid;
+  border-radius: 25px;
+  color: #e6e6e6e5;
+  padding: $padding;
+  min-height: 65vh;
+  // background: rgba(54, 67, 71, .5);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-coordinate: 0 0;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: x mandatory;
+  flex: 1;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  div[role=article] {
+    width: 80%;
+    height: 100%;
+    padding: $padding;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+  a {
+    color: #e6e6e649;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  div[role=main] {
+    margin-right: 5px;
+  }
+}
