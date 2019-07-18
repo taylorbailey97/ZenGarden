@@ -1,32 +1,46 @@
 .wrapper {
-    height: 200px;
     width: 100%;
-    margin: 15px auto;
+    height: 300px;
+    margin-bottom: 5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
     text-align: center;
     ul {
+        margin: 0rem auto;
         list-style: none;
+        padding: 0;
+        padding-bottom: 15px;
+        li a {
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            font-size: 1.5rem;
+        }
+        li:not(:last-child) {
+            &:after {
+                content: '--------------------------------'
+            }
+        }
     }
 }
 
 @media only screen and (min-width: 800px) {
     .wrapper {
-        height: 100%; /* Full-height: remove this if you want "auto" height */
+        text-align: center;
+        height: 70vh; /* Full-height: remove this if you want "auto" height */
         width: 250px; /* Set the width of the sidebar */
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: -1; /* Stay on top */
+        z-index: 20; /* Stay on top */
         top: 0; /* Stay at the top */
         right: 0;
         bottom: 0;
         background-color: #1111110e;
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 6rem;
-        padding-bottom: 5.5rem;
+        margin: 6rem 0;
         li a {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
             font-size: 25px;
-            color: #818181;
-            display: block;
             &hover {
                 color: #f1f1f1;
                 text-decoration: underline;
