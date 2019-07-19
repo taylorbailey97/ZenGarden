@@ -13,10 +13,10 @@ div[role=main] {
   border-radius: 25px;
   color: #e6e6e6e5;
   padding: $padding;
-  min-height: 65vh;
+  max-height: 65vh;
   // background: rgba(54, 67, 71, .5);
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   scroll-snap-coordinate: 0 0;
   scroll-snap-points-x: repeat(100%);
   scroll-snap-type: x mandatory;
@@ -38,5 +38,6 @@ div[role=main] {
 @media only screen and (min-width: 800px) {
   div[role=main] {
     margin-right: 5px;
+    margin-bottom: 6rem;
   }
 }

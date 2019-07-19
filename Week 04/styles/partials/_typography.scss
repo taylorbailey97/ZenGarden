@@ -1,14 +1,124 @@
 /* xTypography section - basic style */
 @import url(http://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap);
-
+ 
 $primary-font: 'Baloo Bhai', sans-serif;
-
-h1{
-  font-family: $primary-font;
-}
-
+ 
+//colors
+$color-1: #364347; // Cornflower Blue - Action color
+$color-2: #18181a; // Dark Blue
+$color-3: #738E7F; // dark green
+$color-4: darken(#e6e6e6, 20%); // light grey
+$color-5: #ffffff; // white
+$color-6: #6fce72; // green
+$color-7: red; // red
+ 
 body{
   font-family: $primary-font;
 }
-//Add to style-guide.scss
-//@import 'partials/typography';
+ 
+header{
+  color: $color-6
+}
+ 
+div[role="article"]{
+  font-size: 1.5em;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  color: $color-4;
+ 
+  h3{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+ 
+  a{
+    color: $color-4;
+    text-decoration: $color-4 underline overline;
+   
+    &:visited{
+      color: $color-4;
+    }
+ 
+    &:hover{
+      color: $color-3;
+    }
+ 
+    &:active{
+      color: $color-3;
+    }
+  }
+}
+ 
+abbr{
+  text-decoration: none;
+ 
+}
+ 
+.design-selection{
+  color: $color-3;
+  font-style: bold;
+ 
+  a{
+    color: lighten($color-3, 10%);
+ 
+    &:visited{
+      color: $color-4;
+    }
+ 
+    &:hover{
+      color: $color-3;
+      text-decoration: underline overline;
+      font-size: 2em;
+    }
+ 
+    &:active{
+      color: $color-3;
+    }
+  }
+}
+ 
+.design-archives{
+  color: $color-3;
+  font-style: bold;
+ 
+  a{
+    color: lighten($color-3, 10%);
+ 
+    &:visited{
+      color: $color-4;
+    }
+ 
+    &:hover{
+      color: $color-3;
+      text-decoration: underline overline;
+      font-size: 2em;
+    }
+ 
+    &:active{
+      color: $color-3;
+    }
+  }
+}
+ 
+.zen-resources{
+  color: $color-3;
+  font-style: bold;
+ 
+  a{
+    color: lighten($color-3, 10%);
+ 
+    &:visited{
+      color: $color-4;
+    }
+ 
+    &:hover{
+      color: $color-3;
+      text-decoration: underline overline;
+      font-size: 2em;
+    }
+ 
+    &:active{
+      color: $color-3;
+    }
+  }
+}

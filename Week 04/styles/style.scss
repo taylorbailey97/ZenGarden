@@ -2,11 +2,11 @@
 @import "./partials/viewer";
 @import "./partials/background";
 @import "./partials/links";
-@import "./partials/popup";
+@import "./partials/typography";
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 
 .preamble, .summary {
-  display: none;
+  text-align: center;
 }
 
 body {
